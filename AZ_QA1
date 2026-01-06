@@ -1,0 +1,87 @@
+🚀 Azure DevOps Engineer (3–5 Years Experience) – Interview Questions 🚀
+
+For mid to senior-level Azure DevOps Engineers, these questions focus on real-world scenarios, architecture, security, and scalability 👇
+
+🔹 Azure DevOps & CI/CD
+
+1.How do Azure Pipelines work internally?
+A.Azure Pipelines work by automatically building, testing, and deploying code through a sequence of defined stages using agents that execute pipeline tasks.
+
+2.YAML vs Classic pipelines – when do you prefer each?
+A.Use YAML pipelines for versioned, code-defined CI/CD with flexibility and reuse; use Classic pipelines for simpler, UI-driven setups or when YAML expertise isn’t available.
+
+3.How do you design multi-stage pipelines in Azure DevOps?
+A.Design multi-stage pipelines in Azure DevOps by defining sequential or parallel stages in YAML or Classic pipelines, each with jobs and steps, and controlling execution with dependencies and conditions.
+
+4.How do you manage approvals and gates in release pipelines?
+A.Manage approvals and gates in release pipelines by configuring pre-deployment and post-deployment approvals and gates that automatically validate conditions before proceeding.
+
+5. Source Control & Artifacts
+A. In Azure DevOps, Source Control manages your code using Git., while Artifacts store and share built outputs like npm, or Maven packages across pipelines and teams.
+
+5. Azure Repos vs GitHub – key differences?
+A.Azure Repos is a private, enterprise-focused Git repository integrated with Azure DevOps, while GitHub is a public/private Git platform with broader community collaboration and open-source focus.
+
+6. How do you manage branching strategies in Azure Repos?
+A.Manage branching strategies in Azure Repos by defining policies for feature, release, and main branches, using pull requests, branch protections, and merge strategies to control code flow.
+
+7. How do you version and store build artifacts?
+A. Version and store build artifacts by assigning unique version numbers and publishing them to Azure Artifacts, feed repositories, or external storage for reuse in deployments.
+
+🔹 Azure Infrastructure
+8. How do you design highly available applications in Azure?
+A.Design highly available applications in Azure by distributing workloads across regions and availability zones, using load balancers, auto-scaling, and redundant services.
+
+9. Difference between Availability Sets and Availability Zones?
+A.Availability Sets protect VMs within a single datacenter from hardware failures, while Availability Zones replicate resources across separate datacenters for higher fault and region-level resilience.
+
+10. When do you use Azure Load Balancer vs Application Gateway?
+A.Use Azure Load Balancer for layer 4 traffic distribution and high-performance TCP/UDP load balancing, and Application Gateway for layer 7 traffic routing, SSL termination, and web application firewall capabilities.
+
+🔹 Infrastructure as Code
+11. ARM templates vs Bicep vs Terraform – what do you prefer and why?
+A.ARM templates are JSON-based and native, Bicep is a simpler, declarative abstraction over ARM, and Terraform is cloud-agnostic; preference depends on Azure focus (Bicep/ARM) vs multi-cloud flexibility (Terraform).
+
+12. How do you manage multiple environments using Terraform in Azure?
+A.Manage multiple environments in Terraform by using workspaces, variable files, and environment-specific state configurations to isolate deployments per environment.
+
+13. How do you handle Terraform remote state in Azure?
+A.Handle Terraform remote state in Azure by storing it in Azure Storage accounts with container locks, optionally using Azure Cosmos DB or backend configurations for state management and concurrency control.
+
+🔹 Containers & Kubernetes (AKS)
+14. How does AKS handle scaling and self-healing?
+A.AKS handles scaling with cluster and pod autoscalers and ensures self-healing by replacing failed nodes or restarting unhealthy pods automatically.
+
+15. How do you deploy applications to AKS using Azure DevOps?
+A.Deploy applications to AKS using Azure DevOps by creating CI/CD pipelines that build container images, push them to a registry, and apply Kubernetes manifests or Helm charts to the cluster.
+
+16. How do you manage secrets in AKS?
+A.Manage secrets in AKS using Kubernetes Secrets or integrating with Azure Key Vault for secure, centralized secret storage and access.
+
+17. Difference between ConfigMaps and Secrets?
+A.ConfigMaps store non-sensitive configuration data, while Secrets store sensitive information like passwords or keys, both accessible to pods in AKS.
+
+
+🔹 Monitoring & Logging
+18. How do Azure Monitor and Log Analytics work together?
+19. How do you monitor AKS workloads?
+20. How do you set up alerts for production issues?
+
+🔹 Security & Governance
+21. How do you secure Azure DevOps pipelines?
+22. What is Azure Key Vault and how is it integrated with pipelines?
+23. How do you implement RBAC in Azure?
+24. How do you manage policies using Azure Policy?
+
+🔹 Networking
+25. Difference between VNet Peering and VPN Gateway?
+26. How do you design secure networking for Azure workloads?
+
+🔹 Real-World Scenarios
+27. How do you handle zero-downtime deployments in Azure?
+28. How do you troubleshoot failed Azure pipelines?
+29. How do you manage cost optimization in Azure?
+30. How do you migrate CI/CD pipelines from Jenkins to Azure DevOps?
+
+
+
