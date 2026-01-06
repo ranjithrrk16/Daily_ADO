@@ -61,27 +61,38 @@ A.Manage secrets in AKS using Kubernetes Secrets or integrating with Azure Key V
 17. Difference between ConfigMaps and Secrets?
 A.ConfigMaps store non-sensitive configuration data, while Secrets store sensitive information like passwords or keys, both accessible to pods in AKS.
 
-
 🔹 Monitoring & Logging
 18. How do Azure Monitor and Log Analytics work together?
+A.Azure Monitor collects telemetry from resources, which Log Analytics stores, queries, and analyzes to provide insights and alerts.
 19. How do you monitor AKS workloads?
+A.Monitor AKS workloads using Azure Monitor for containers, Log Analytics, and Prometheus/Grafana for metrics, logs, and performance insights.
 20. How do you set up alerts for production issues?
+A.Create metrics- or log-based alerts in Azure Monitor, define thresholds or conditions, and configure action groups for notifications or automated remediation.
 
 🔹 Security & Governance
 21. How do you secure Azure DevOps pipelines?
+A.Implement role-based access, secure service connections and secrets, enable pipeline policies, use branch protection, and enforce code scanning and compliance checks.
 22. What is Azure Key Vault and how is it integrated with pipelines?
+A.Azure Key Vault is a secure store for secrets, keys, and certificates, integrated into pipelines via service connections to fetch secrets without exposing them in code.
 23. How do you implement RBAC in Azure?
+A.Assign roles to users, groups, or service principals at the appropriate scope (subscription, resource group, or resource) using Azure RBAC.
 24. How do you manage policies using Azure Policy?
+A.Define, assign, and enforce policies at subscription or resource group level to ensure compliance and govern resources in Azure.
 
 🔹 Networking
 25. Difference between VNet Peering and VPN Gateway?
+A.VNet Peering connects Azure VNets privately within Azure, while a VPN Gateway securely connects on-premises networks or remote VNets over the public Internet.
 26. How do you design secure networking for Azure workloads?
+A.Use VNets with subnets, NSGs, Azure Firewall, DDoS protection, private endpoints, and VPN/ExpressRoute for secure, segmented, and controlled network access.
 
 🔹 Real-World Scenarios
 27. How do you handle zero-downtime deployments in Azure?
+A.Use blue-green or canary deployments with Azure App Service slots, AKS rolling updates, and traffic routing via Azure Front Door or Load Balancer.
 28. How do you troubleshoot failed Azure pipelines?
+A.Check pipeline logs and error messages, validate YAML syntax and variables, verify service connections and permissions, and rerun with diagnostics enabled.
 29. How do you manage cost optimization in Azure?
+A.Use Azure Cost Management, right-size resources, automate scaling, leverage reserved instances/savings plans, and continuously monitor and govern spend.
 30. How do you migrate CI/CD pipelines from Jenkins to Azure DevOps?
-
+A.Assess existing Jenkins jobs, map them to Azure DevOps YAML pipelines, migrate build/test scripts, integrate repos and artifacts, and validate with parallel runs before decommissioning Jenkins.
 
 
